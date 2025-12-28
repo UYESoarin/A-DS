@@ -95,7 +95,7 @@ class AdjListGraph{
 		
 		
 		private:
-			//���ѵݹ麯�� 
+			//ÉîËÑµÝ¹éº¯Êý 
 			void DFSRescusive(int v,vector<bool> visited){
 				visited[v]=true;
 				cout<<v<<' ';
@@ -107,7 +107,3 @@ class AdjListGraph{
 				}
 			}
 };
-
-
-
- 
