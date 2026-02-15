@@ -54,14 +54,14 @@ int kruskal(int n){
 	vector<int> parent(n);
 	for(int i=0;i<n;i++)parent[i]=i;
 	
-	funciton<int(int)> find=[&](int x){
+	function<int(int)> find=[&](int x){
 		return parent[x]==x?x:parent[x]=find(parent[x]);
 	}
 	
 	for(auto& e:edges){
 		int ru=find(r.u);
 		int rv=find(r.v);
-		if(ru!=rv){
+		if(ru!=rv){i
 			parent[ru]=rv;
 			total+=e.w;
 			if(++cnt==n-1)break;
@@ -69,4 +69,5 @@ int kruskal(int n){
 	}
 	return cnt==n-1?total:-1;
 }
+
 
