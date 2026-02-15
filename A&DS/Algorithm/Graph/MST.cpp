@@ -61,7 +61,7 @@ int kruskal(int n){
 	for(auto& e:edges){
 		int ru=find(r.u);
 		int rv=find(r.v);
-		if(ru!=rv){i
+		if(ru!=rv){
 			parent[ru]=rv;
 			total+=e.w;
 			if(++cnt==n-1)break;
@@ -69,5 +69,6 @@ int kruskal(int n){
 	}
 	return cnt==n-1?total:-1;
 }
+
 
 
